@@ -1,0 +1,26 @@
+.indexHeader {
+    display: flex;
+    padding-top: 12px;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(40, 176, 255);
+}
+
+.paragraph {
+    font-size: large;
+}
+
+
+
+.spoiler {
+    color: black;
+    background-color: black;
+}
+
+.spoiler:hover {
+    color: white;
+}
+
+.spoiler2:hover {
+    background-color: white;
+}

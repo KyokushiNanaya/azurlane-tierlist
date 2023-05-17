@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Azurlane Tier list</title>
+    <link rel="stylesheet" href="styles/table.css">
+</head>
+
+<body>
+    <header class="menuHeader">
+        強度表更新日期: 2023/5/4
+    </header>
+    <div class="bubutable">
+        <table class="wikitable FilterTable">
+            <tbody>
+                <tr>
+                    <th>
+                        分組
+                    </th>
+                    <td>
+                        <li class="btn" role="button" onclick="changeDisplay('0|0')" data-option="0|0" data-group="0">
+                            全部
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        類型
+                    </th>
+                    <td>
+                        <li class="btn" role="button" onclick="changeDisplay('1|驱逐')" data-option="1|驱逐" data-group="1">
+                            驱逐
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|轻巡')" data-option="1|轻巡" data-group="1">
+                            轻巡
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|重巡')" data-option="1|重巡" data-group="1">
+                            重巡
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|超巡')" data-option="1|超巡" data-group="1">
+                            超巡
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|战巡')" data-option="1|战巡" data-group="1">
+                            战巡
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|战列')" data-option="1|战列" data-group="1">
+                            战列
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|航战')" data-option="1|航战" data-group="1">
+                            航战
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|航母')" data-option="1|航母" data-group="1">
+                            航母
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|轻航')" data-option="1|轻航" data-group="1">
+                            轻航
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|重砲')" data-option="1|重砲" data-group="1">
+                            重砲
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|维修')" data-option="1|维修" data-group="1">
+                            维修
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|潜艇')" data-option="1|潜艇" data-group="1">
+                            潜艇
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|潜母')" data-option="1|潜母" data-group="1">
+                            潜母
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|运输')" data-option="1|运输" data-group="1">
+                            运输
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('1|风帆')" data-option="1|风帆" data-group="1">
+                            风帆
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        稀有度
+                    </th>
+                    <td>
+                        <li class="btn" role="button" onclick="changeDisplay('2|普通')" data-option="2|普通" data-group="2">
+                            普通
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('2|稀有')" data-option="2|稀有" data-group="2">
+                            稀有
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('2|精锐')" data-option="2|精锐" data-group="2">
+                            精锐
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('2|超稀有')" data-option="2|超稀有"
+                            data-group="2">
+                            超稀有
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('2|海上传奇')" data-option="2|海上传奇"
+                            data-group="2">
+                            海上传奇
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('2|最高方案')" data-option="2|最高方案"
+                            data-group="2">
+                            最高方案
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('2|决战方案')" data-option="2|决战方案"
+                            data-group="2">
+                            决战方案
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        陣營
+                    </th>
+                    <td>
+                        <li class="btn" role="button" onclick="changeDisplay('3|白鹰')" data-option="3|白鹰" data-group="3">
+                            白鹰
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|皇家')" data-option="3|皇家" data-group="3">
+                            皇家
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|重樱')" data-option="3|重樱" data-group="3">
+                            重樱
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|铁血')" data-option="3|铁血" data-group="3">
+                            铁血
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|东煌')" data-option="3|东煌" data-group="3">
+                            东煌
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|撒丁帝国')" data-option="3|撒丁帝国"
+                            data-group="3">
+                            撒丁帝国
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|北方联合')" data-option="3|北方联合"
+                            data-group="3">
+                            北方联合
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|自由鸢尾')" data-option="3|自由鸢尾"
+                            data-group="3">
+                            自由鸢尾
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|维希教廷')" data-option="3|维希教廷"
+                            data-group="3">
+                            维希教廷
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|其他')" data-option="3|其他" data-group="3">
+                            其他
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|飓风')" data-option="3|飓风" data-group="3">
+                            飓风
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|海王星')" data-option="3|海王星"
+                            data-group="3">
+                            海王星
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|哔哩哔哩')" data-option="3|哔哩哔哩"
+                            data-group="3">
+                            哔哩哔哩
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|传颂之物')" data-option="3|传颂之物"
+                            data-group="3">
+                            传颂之物
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|KizunaAI')" data-option="3|KizunaAI"
+                            data-group="3">
+                            KizunaAI
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|维纳斯假期')" data-option="3|维纳斯假期"
+                            data-group="3">
+                            维纳斯假期
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|偶像大师')" data-option="3|偶像大师"
+                            data-group="3">
+                            偶像大师
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|SSSS')" data-option="3|SSSS"
+                            data-group="3">
+                            SSSS
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('3|肥大腿')" data-option="3|肥大腿"
+                            data-group="3">
+                            肥大腿
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        主線Tier
+                    </th>
+                    <td>
+                        <li class="btn" role="button" onclick="changeDisplay('4|SS')" data-option="4|SS" data-group="4">
+                            SS
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('4|S+')" data-option="4|S+" data-group="4">
+                            S+
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('4|S')" data-option="4|S" data-group="4">
+                            S
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('4|A+')" data-option="4|A+" data-group="4">
+                            A+
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('4|A')" data-option="4|A" data-group="4">
+                            A
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('4|B+')" data-option="4|B+" data-group="4">
+                            B+
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('4|B')" data-option="4|B" data-group="4">
+                            B
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('4|C+')" data-option="4|C+" data-group="4">
+                            C+
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('4|C')" data-option="4|C" data-group="4">
+                            C
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        大世界Tier
+                    </th>
+                    <td>
+                        <li class="btn" role="button" onclick="changeDisplay('5|SS')" data-option="5|SS" data-group="5">
+                            SS
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('5|S+')" data-option="5|S+" data-group="5">
+                            S+
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('5|S')" data-option="5|S" data-group="5">
+                            S
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('5|A+')" data-option="5|A+" data-group="5">
+                            A+
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('5|A')" data-option="5|A" data-group="5">
+                            A
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('5|B+')" data-option="5|B+" data-group="5">
+                            B+
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('5|B')" data-option="5|B" data-group="5">
+                            B
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('5|C+')" data-option="5|C+" data-group="5">
+                            C+
+                        </li>
+                        <li class="btn" role="button" onclick="changeDisplay('5|C')" data-option="5|C" data-group="5">
+                            C
+                        </li>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="CardSelectTr" style="display:flex;justify-content:center;align-items:center;flex-wrap:wrap;padding-left: 10%; padding-right: 10%;padding-top: 1%;">
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="海上传奇" data-param3="其他"
+            data-param4="null" data-param5="null" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="特装型布里MKIII头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/c/c6/8ytp9bpabdolnijp72anaqapbln3rb7.jpg/60px-%E7%89%B9%E8%A3%85%E5%9E%8B%E5%B8%83%E9%87%8CMKIII%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/c/c6/8ytp9bpabdolnijp72anaqapbln3rb7.jpg/90px-%E7%89%B9%E8%A3%85%E5%9E%8B%E5%B8%83%E9%87%8CMKIII%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/c/c6/8ytp9bpabdolnijp72anaqapbln3rb7.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a
+                        href="https://wiki.biligame.com/blhx/%E7%89%B9%E8%A3%85%E5%9E%8B%E5%B8%83%E9%87%8CMKIII"
+                        title="特装型布里MKIII"><img alt="舰娘头像外框海上传奇.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/6/6d/qqv5oy3xs40d3055cco6bsm0j4k4gzk.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E6%B5%B7%E4%B8%8A%E4%BC%A0%E5%A5%87.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/6/6d/qqv5oy3xs40d3055cco6bsm0j4k4gzk.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E6%B5%B7%E4%B8%8A%E4%BC%A0%E5%A5%87.png 1.5x, https://patchwiki.biligame.com/images/blhx/6/6d/qqv5oy3xs40d3055cco6bsm0j4k4gzk.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a
+                    href="https://wiki.biligame.com/blhx/%E7%89%B9%E8%A3%85%E5%9E%8B%E5%B8%83%E9%87%8CMKIII"
+                    title="特装型布里MKIII">特装型布里MKIII</a></span>
+        </div>
+
+        <div class="jntj-1 divsort" data-param0="0" data-param1="战列" data-param2="海上传奇" data-param3="白鹰"
+            data-param4="S+" data-param5="SS" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="新泽西头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/b/bc/kpg4ewdkf0wq0poxktetujr419l5d24.jpg/60px-%E6%96%B0%E6%B3%BD%E8%A5%BF%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/b/bc/kpg4ewdkf0wq0poxktetujr419l5d24.jpg/90px-%E6%96%B0%E6%B3%BD%E8%A5%BF%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/b/bc/kpg4ewdkf0wq0poxktetujr419l5d24.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E6%96%B0%E6%B3%BD%E8%A5%BF"
+                        title="新泽西"><img alt="舰娘头像外框海上传奇.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/6/6d/qqv5oy3xs40d3055cco6bsm0j4k4gzk.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E6%B5%B7%E4%B8%8A%E4%BC%A0%E5%A5%87.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/6/6d/qqv5oy3xs40d3055cco6bsm0j4k4gzk.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E6%B5%B7%E4%B8%8A%E4%BC%A0%E5%A5%87.png 1.5x, https://patchwiki.biligame.com/images/blhx/6/6d/qqv5oy3xs40d3055cco6bsm0j4k4gzk.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div>
+            <span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E6%96%B0%E6%B3%BD%E8%A5%BF"
+                    title="新泽西">新泽西<br>花园</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="海上传奇" data-param3="重樱" data-param4="S"
+            data-param5="A+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="岛风头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/2/21/lwy0gq6jlyfh6mdfo6eof5wvtoogbm5.jpg/60px-%E5%B2%9B%E9%A3%8E%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/2/21/lwy0gq6jlyfh6mdfo6eof5wvtoogbm5.jpg/90px-%E5%B2%9B%E9%A3%8E%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/2/21/lwy0gq6jlyfh6mdfo6eof5wvtoogbm5.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E5%B2%9B%E9%A3%8E" title="岛风"><img
+                            alt="舰娘头像外框海上传奇.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/6/6d/qqv5oy3xs40d3055cco6bsm0j4k4gzk.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E6%B5%B7%E4%B8%8A%E4%BC%A0%E5%A5%87.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/6/6d/qqv5oy3xs40d3055cco6bsm0j4k4gzk.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E6%B5%B7%E4%B8%8A%E4%BC%A0%E5%A5%87.png 1.5x, https://patchwiki.biligame.com/images/blhx/6/6d/qqv5oy3xs40d3055cco6bsm0j4k4gzk.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E5%B2%9B%E9%A3%8E"
+                    title="岛风">岛风<br>芒</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="重樱" data-param4="S"
+            data-param5="A+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="夕立头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/0/03/cefhfx9nc86f3j91zsbgobe9h2n9svh.jpg/60px-%E5%A4%95%E7%AB%8B%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/0/03/cefhfx9nc86f3j91zsbgobe9h2n9svh.jpg/90px-%E5%A4%95%E7%AB%8B%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/0/03/cefhfx9nc86f3j91zsbgobe9h2n9svh.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E5%A4%95%E7%AB%8B" title="夕立"><img
+                            alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E5%A4%95%E7%AB%8B"
+                    title="夕立">夕立<br>椿</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="皇家" data-param4="A+"
+            data-param5="A" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="贾维斯头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/8/81/4txxydh947vycfqr74x9tfwd5i7hyzk.jpg/60px-%E8%B4%BE%E7%BB%B4%E6%96%AF%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/8/81/4txxydh947vycfqr74x9tfwd5i7hyzk.jpg/90px-%E8%B4%BE%E7%BB%B4%E6%96%AF%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/8/81/4txxydh947vycfqr74x9tfwd5i7hyzk.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E8%B4%BE%E7%BB%B4%E6%96%AF"
+                        title="贾维斯"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E8%B4%BE%E7%BB%B4%E6%96%AF"
+                    title="贾维斯">贾维斯</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="皇家" data-param4="A+"
+            data-param5="A" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="雅努斯头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/6/69/q9r5sh34x7eix8qw12o8uhuwb0v0t57.jpg/60px-%E9%9B%85%E5%8A%AA%E6%96%AF%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/6/69/q9r5sh34x7eix8qw12o8uhuwb0v0t57.jpg/90px-%E9%9B%85%E5%8A%AA%E6%96%AF%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/6/69/q9r5sh34x7eix8qw12o8uhuwb0v0t57.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E9%9B%85%E5%8A%AA%E6%96%AF"
+                        title="雅努斯"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E9%9B%85%E5%8A%AA%E6%96%AF"
+                    title="雅努斯">雅努斯</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="东煌" data-param4="A+"
+            data-param5="A+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="鞍山头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/d/d1/4pkvyile22sc4yq1vd3th9uaq5ez06v.jpg/60px-%E9%9E%8D%E5%B1%B1%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/d/d1/4pkvyile22sc4yq1vd3th9uaq5ez06v.jpg/90px-%E9%9E%8D%E5%B1%B1%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/d/d1/4pkvyile22sc4yq1vd3th9uaq5ez06v.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E9%9E%8D%E5%B1%B1" title="鞍山"><img
+                            alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E9%9E%8D%E5%B1%B1"
+                    title="鞍山">鞍山</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="东煌" data-param4="A"
+            data-param5="A+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="长春头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/8/8f/1j0p7n8qknlldrvyxdauhas2vj5zt2o.jpg/60px-%E9%95%BF%E6%98%A5%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/8/8f/1j0p7n8qknlldrvyxdauhas2vj5zt2o.jpg/90px-%E9%95%BF%E6%98%A5%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/8/8f/1j0p7n8qknlldrvyxdauhas2vj5zt2o.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E9%95%BF%E6%98%A5" title="长春"><img
+                            alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E9%95%BF%E6%98%A5"
+                    title="长春">长春</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="白鹰" data-param4="A"
+            data-param5="A" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="查尔斯·奥斯本头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/2/2a/rgmnlgo6i58mj3w9sr2c04iqyggmxsn.jpg/60px-%E6%9F%A5%E5%B0%94%E6%96%AF%C2%B7%E5%A5%A5%E6%96%AF%E6%9C%AC%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/2/2a/rgmnlgo6i58mj3w9sr2c04iqyggmxsn.jpg/90px-%E6%9F%A5%E5%B0%94%E6%96%AF%C2%B7%E5%A5%A5%E6%96%AF%E6%9C%AC%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/2/2a/rgmnlgo6i58mj3w9sr2c04iqyggmxsn.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a
+                        href="https://wiki.biligame.com/blhx/%E6%9F%A5%E5%B0%94%E6%96%AF%C2%B7%E5%A5%A5%E6%96%AF%E6%9C%AC"
+                        title="查尔斯·奥斯本"><img alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a
+                    href="https://wiki.biligame.com/blhx/%E6%9F%A5%E5%B0%94%E6%96%AF%C2%B7%E5%A5%A5%E6%96%AF%E6%9C%AC"
+                    title="查尔斯·奥斯本">查尔斯·奥斯本</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="重樱" data-param4="B+"
+            data-param5="B+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="凉月头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/2/26/sq38mhqm1tp4qtfb4gsov5tidhtgau8.jpg/60px-%E5%87%89%E6%9C%88%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/2/26/sq38mhqm1tp4qtfb4gsov5tidhtgau8.jpg/90px-%E5%87%89%E6%9C%88%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/2/26/sq38mhqm1tp4qtfb4gsov5tidhtgau8.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E5%87%89%E6%9C%88" title="凉月"><img
+                            alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E5%87%89%E6%9C%88"
+                    title="凉月">凉月<br>栎</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="撒丁帝国"
+            data-param4="B+" data-param5="B+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="庞培·马格诺头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/7/7c/7vwzjqy1aizadsbvlwqfeqcgneufgad.jpg/60px-%E5%BA%9E%E5%9F%B9%C2%B7%E9%A9%AC%E6%A0%BC%E8%AF%BA%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/7/7c/7vwzjqy1aizadsbvlwqfeqcgneufgad.jpg/90px-%E5%BA%9E%E5%9F%B9%C2%B7%E9%A9%AC%E6%A0%BC%E8%AF%BA%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/7/7c/7vwzjqy1aizadsbvlwqfeqcgneufgad.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a
+                        href="https://wiki.biligame.com/blhx/%E5%BA%9E%E5%9F%B9%C2%B7%E9%A9%AC%E6%A0%BC%E8%AF%BA"
+                        title="庞培·马格诺"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a
+                    href="https://wiki.biligame.com/blhx/%E5%BA%9E%E5%9F%B9%C2%B7%E9%A9%AC%E6%A0%BC%E8%AF%BA"
+                    title="庞培·马格诺">庞培·马格诺</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="白鹰" data-param4="B+"
+            data-param5="B+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="英格拉罕头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/9/95/no8hhf4crazzv71x6mo61hygocdran8.jpg/60px-%E8%8B%B1%E6%A0%BC%E6%8B%89%E7%BD%95%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/9/95/no8hhf4crazzv71x6mo61hygocdran8.jpg/90px-%E8%8B%B1%E6%A0%BC%E6%8B%89%E7%BD%95%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/9/95/no8hhf4crazzv71x6mo61hygocdran8.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E8%8B%B1%E6%A0%BC%E6%8B%89%E7%BD%95"
+                        title="英格拉罕"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E8%8B%B1%E6%A0%BC%E6%8B%89%E7%BD%95"
+                    title="英格拉罕">英格拉罕</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="白鹰" data-param4="B+"
+            data-param5="null" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="布里斯托尔头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/7/79/mdkc0sj4sxyt52vcsn9buzxkmiussy2.jpg/60px-%E5%B8%83%E9%87%8C%E6%96%AF%E6%89%98%E5%B0%94%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/7/79/mdkc0sj4sxyt52vcsn9buzxkmiussy2.jpg/90px-%E5%B8%83%E9%87%8C%E6%96%AF%E6%89%98%E5%B0%94%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/7/79/mdkc0sj4sxyt52vcsn9buzxkmiussy2.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a
+                        href="https://wiki.biligame.com/blhx/%E5%B8%83%E9%87%8C%E6%96%AF%E6%89%98%E5%B0%94"
+                        title="布里斯托尔"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a
+                    href="https://wiki.biligame.com/blhx/%E5%B8%83%E9%87%8C%E6%96%AF%E6%89%98%E5%B0%94"
+                    title="布里斯托尔">布里斯托尔</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="白鹰" data-param4="B+"
+            data-param5="B+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="艾伦·萨姆纳头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/e/e2/84h7271b9uh9tly3y7oehg4bnlln10d.jpg/60px-%E8%89%BE%E4%BC%A6%C2%B7%E8%90%A8%E5%A7%86%E7%BA%B3%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/e/e2/84h7271b9uh9tly3y7oehg4bnlln10d.jpg/90px-%E8%89%BE%E4%BC%A6%C2%B7%E8%90%A8%E5%A7%86%E7%BA%B3%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/e/e2/84h7271b9uh9tly3y7oehg4bnlln10d.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a
+                        href="https://wiki.biligame.com/blhx/%E8%89%BE%E4%BC%A6%C2%B7%E8%90%A8%E5%A7%86%E7%BA%B3"
+                        title="艾伦·萨姆纳"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a
+                    href="https://wiki.biligame.com/blhx/%E8%89%BE%E4%BC%A6%C2%B7%E8%90%A8%E5%A7%86%E7%BA%B3"
+                    title="艾伦·萨姆纳">艾伦·萨姆纳</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="北方联合"
+            data-param4="B+" data-param5="B" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="塔什干头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/b/b2/tw3onvzibpq3l2hh0voylt5cuoafohn.jpg/60px-%E5%A1%94%E4%BB%80%E5%B9%B2%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/b/b2/tw3onvzibpq3l2hh0voylt5cuoafohn.jpg/90px-%E5%A1%94%E4%BB%80%E5%B9%B2%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/b/b2/tw3onvzibpq3l2hh0voylt5cuoafohn.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E5%A1%94%E4%BB%80%E5%B9%B2"
+                        title="塔什干"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E5%A1%94%E4%BB%80%E5%B9%B2"
+                    title="塔什干">塔什干</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="最高方案" data-param3="重樱"
+            data-param4="B+" data-param5="B" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="北风头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/3/31/dnws3j4ovgzu4ivnfku0ptu2q09zxlf.jpg/60px-%E5%8C%97%E9%A3%8E%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/3/31/dnws3j4ovgzu4ivnfku0ptu2q09zxlf.jpg/90px-%E5%8C%97%E9%A3%8E%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/3/31/dnws3j4ovgzu4ivnfku0ptu2q09zxlf.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E5%8C%97%E9%A3%8E" title="北风"><img
+                            alt="舰娘头像外框最高方案.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/6/6a/9vt4djm7me8mwmjczrynb01x270jy12.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E6%9C%80%E9%AB%98%E6%96%B9%E6%A1%88.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/6/6a/9vt4djm7me8mwmjczrynb01x270jy12.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E6%9C%80%E9%AB%98%E6%96%B9%E6%A1%88.png 1.5x, https://patchwiki.biligame.com/images/blhx/6/6a/9vt4djm7me8mwmjczrynb01x270jy12.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E5%8C%97%E9%A3%8E"
+                    title="北风">北风<br>苝</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="重樱" data-param4="B+"
+            data-param5="B" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="若月头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/9/99/q8cmh6laj2h8u4yhidskmyv3c89bbjc.jpg/60px-%E8%8B%A5%E6%9C%88%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/9/99/q8cmh6laj2h8u4yhidskmyv3c89bbjc.jpg/90px-%E8%8B%A5%E6%9C%88%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/9/99/q8cmh6laj2h8u4yhidskmyv3c89bbjc.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E8%8B%A5%E6%9C%88" title="若月"><img
+                            alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E8%8B%A5%E6%9C%88"
+                    title="若月">若月<br>若</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="重樱" data-param4="B"
+            data-param5="C+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="雪风头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/4/47/boy7kqqgbv1ekisqgubb3mkjydsk77w.jpg/60px-%E9%9B%AA%E9%A3%8E%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/4/47/boy7kqqgbv1ekisqgubb3mkjydsk77w.jpg/90px-%E9%9B%AA%E9%A3%8E%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/4/47/boy7kqqgbv1ekisqgubb3mkjydsk77w.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E9%9B%AA%E9%A3%8E" title="雪风"><img
+                            alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E9%9B%AA%E9%A3%8E"
+                    title="雪风">雪风<br>莲</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="白鹰" data-param4="B"
+            data-param5="C+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="埃尔德里奇头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/a/a4/qnf89zn62ovim4w7dtw7brtyrc9emcw.jpg/60px-%E5%9F%83%E5%B0%94%E5%BE%B7%E9%87%8C%E5%A5%87%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a4/qnf89zn62ovim4w7dtw7brtyrc9emcw.jpg/90px-%E5%9F%83%E5%B0%94%E5%BE%B7%E9%87%8C%E5%A5%87%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/a/a4/qnf89zn62ovim4w7dtw7brtyrc9emcw.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a
+                        href="https://wiki.biligame.com/blhx/%E5%9F%83%E5%B0%94%E5%BE%B7%E9%87%8C%E5%A5%87"
+                        title="埃尔德里奇"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a
+                    href="https://wiki.biligame.com/blhx/%E5%9F%83%E5%B0%94%E5%BE%B7%E9%87%8C%E5%A5%87"
+                    title="埃尔德里奇">埃尔德里奇</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="自由鸢尾"
+            data-param4="B" data-param5="B" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="可怖头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/a/ac/n93ccitndcpnank0v5lz1rxgry1jrqk.jpg/60px-%E5%8F%AF%E6%80%96%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/ac/n93ccitndcpnank0v5lz1rxgry1jrqk.jpg/90px-%E5%8F%AF%E6%80%96%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/a/ac/n93ccitndcpnank0v5lz1rxgry1jrqk.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E5%8F%AF%E6%80%96" title="可怖"><img
+                            alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E5%8F%AF%E6%80%96"
+                    title="可怖">可怖</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="维希教廷"
+            data-param4="B" data-param5="B" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="不屈头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/b/b2/aypducxvtfnb8janw9ofhysunvk3da5.jpg/60px-%E4%B8%8D%E5%B1%88%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/b/b2/aypducxvtfnb8janw9ofhysunvk3da5.jpg/90px-%E4%B8%8D%E5%B1%88%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/b/b2/aypducxvtfnb8janw9ofhysunvk3da5.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E4%B8%8D%E5%B1%88" title="不屈"><img
+                            alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E4%B8%8D%E5%B1%88"
+                    title="不屈">不屈</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="维纳斯假期"
+            data-param4="B" data-param5="B" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="玛莉萝丝头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/f/f3/ifdzw1u8mjemy8toyy7pzjd97fl16ep.jpg/60px-%E7%8E%9B%E8%8E%89%E8%90%9D%E4%B8%9D%E5%A4%B4%E5%83%8F.jpg.png"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/f/f3/ifdzw1u8mjemy8toyy7pzjd97fl16ep.jpg/90px-%E7%8E%9B%E8%8E%89%E8%90%9D%E4%B8%9D%E5%A4%B4%E5%83%8F.jpg.png 1.5x, https://patchwiki.biligame.com/images/blhx/f/f3/ifdzw1u8mjemy8toyy7pzjd97fl16ep.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E7%8E%9B%E8%8E%89%E8%90%9D%E4%B8%9D"
+                        title="玛莉萝丝"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E7%8E%9B%E8%8E%89%E8%90%9D%E4%B8%9D"
+                    title="玛莉萝丝">玛莉萝丝</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="北方联合"
+            data-param4="B" data-param5="B" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="基辅头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/e/e5/pejtlqzxxq8jx4p2rt7vnujfwz77f7a.jpg/60px-%E5%9F%BA%E8%BE%85%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/e/e5/pejtlqzxxq8jx4p2rt7vnujfwz77f7a.jpg/90px-%E5%9F%BA%E8%BE%85%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/e/e5/pejtlqzxxq8jx4p2rt7vnujfwz77f7a.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E5%9F%BA%E8%BE%85" title="基辅"><img
+                            alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E5%9F%BA%E8%BE%85"
+                    title="基辅">基辅</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="维希教廷"
+            data-param4="C+" data-param5="C" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="恶毒(μ兵装)头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/1/1d/5oajg6jo3zwp8nbh7oqwd4oa5b5y971.jpg/60px-%E6%81%B6%E6%AF%92%28%CE%BC%E5%85%B5%E8%A3%85%29%E5%A4%B4%E5%83%8F.jpg.png"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/1/1d/5oajg6jo3zwp8nbh7oqwd4oa5b5y971.jpg/90px-%E6%81%B6%E6%AF%92%28%CE%BC%E5%85%B5%E8%A3%85%29%E5%A4%B4%E5%83%8F.jpg.png 1.5x, https://patchwiki.biligame.com/images/blhx/1/1d/5oajg6jo3zwp8nbh7oqwd4oa5b5y971.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a
+                        href="https://wiki.biligame.com/blhx/%E6%81%B6%E6%AF%92(%CE%BC%E5%85%B5%E8%A3%85)"
+                        title="恶毒(μ兵装)"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a
+                    href="https://wiki.biligame.com/blhx/%E6%81%B6%E6%AF%92(%CE%BC%E5%85%B5%E8%A3%85)"
+                    title="恶毒(μ兵装)">恶毒(μ兵装)</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="超稀有" data-param3="铁血" data-param4="C+"
+            data-param5="C" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="Z46头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/6/63/n5dic0mbimf6ibu25x6hb0jp138qg52.jpg/60px-Z46%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/6/63/n5dic0mbimf6ibu25x6hb0jp138qg52.jpg/90px-Z46%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/6/63/n5dic0mbimf6ibu25x6hb0jp138qg52.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/Z46" title="Z46"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/Z46" title="Z46">Z46<br>希露</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="铁血" data-param4="C+"
+            data-param5="null" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="Z1头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/d/d7/j4lvux7ugourdpra3uem8ktnvilgb7o.jpg/60px-Z1%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/d/d7/j4lvux7ugourdpra3uem8ktnvilgb7o.jpg/90px-Z1%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/d/d7/j4lvux7ugourdpra3uem8ktnvilgb7o.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/Z1" title="Z1"><img alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/Z1" title="Z1">Z1<br>莉泽洛特</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="重樱" data-param4="C+"
+            data-param5="C+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="霞头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/0/0f/htguvoom0i8ryswf0gxstvzj33glzla.jpg/60px-%E9%9C%9E%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/0/0f/htguvoom0i8ryswf0gxstvzj33glzla.jpg/90px-%E9%9C%9E%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/0/0f/htguvoom0i8ryswf0gxstvzj33glzla.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E9%9C%9E" title="霞"><img alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E9%9C%9E" title="霞">霞<br>蕸</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="北方联合"
+            data-param4="C+" data-param5="C+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="灵敏头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/f/f8/olv0j3783b8o8adw3dgp25evod6yhho.jpg/60px-%E7%81%B5%E6%95%8F%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/f/f8/olv0j3783b8o8adw3dgp25evod6yhho.jpg/90px-%E7%81%B5%E6%95%8F%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/f/f8/olv0j3783b8o8adw3dgp25evod6yhho.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E7%81%B5%E6%95%8F" title="灵敏"><img
+                            alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E7%81%B5%E6%95%8F"
+                    title="灵敏">灵敏</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="白鹰" data-param4="C+"
+            data-param5="C" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="拉菲头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/f/fb/obuvcv2n9kt68b3k285rvqvwk8toyou.jpg/60px-%E6%8B%89%E8%8F%B2%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/f/fb/obuvcv2n9kt68b3k285rvqvwk8toyou.jpg/90px-%E6%8B%89%E8%8F%B2%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/f/fb/obuvcv2n9kt68b3k285rvqvwk8toyou.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E6%8B%89%E8%8F%B2" title="拉菲"><img
+                            alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E6%8B%89%E8%8F%B2"
+                    title="拉菲">拉菲</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="重樱" data-param4="C+"
+            data-param5="C" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="绫波头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/0/08/s96jr9bwh9fx3yevo8x5y673ngx97a6.jpg/60px-%E7%BB%AB%E6%B3%A2%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/0/08/s96jr9bwh9fx3yevo8x5y673ngx97a6.jpg/90px-%E7%BB%AB%E6%B3%A2%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/0/08/s96jr9bwh9fx3yevo8x5y673ngx97a6.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E7%BB%AB%E6%B3%A2" title="绫波"><img
+                            alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E7%BB%AB%E6%B3%A2"
+                    title="绫波">绫波<br>柚</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="铁血" data-param4="C+"
+            data-param5="C" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="Z23头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/2/29/qzw9t2qwhywluqn7ker0w2aehgipnn1.jpg/60px-Z23%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/2/29/qzw9t2qwhywluqn7ker0w2aehgipnn1.jpg/90px-Z23%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/2/29/qzw9t2qwhywluqn7ker0w2aehgipnn1.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/Z23" title="Z23"><img alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/Z23" title="Z23">Z23<br>妮米</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="驱逐" data-param2="精锐" data-param3="皇家" data-param4="C+"
+            data-param5="C" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="标枪头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/5/54/mlvq79uddolwdfdmt3tlrvvg0opuv5f.jpg/60px-%E6%A0%87%E6%9E%AA%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/5/54/mlvq79uddolwdfdmt3tlrvvg0opuv5f.jpg/90px-%E6%A0%87%E6%9E%AA%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/5/54/mlvq79uddolwdfdmt3tlrvvg0opuv5f.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E6%A0%87%E6%9E%AA" title="标枪"><img
+                            alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E6%A0%87%E6%9E%AA"
+                    title="标枪">标枪</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="前排先锋,驱逐" data-param2="精锐" data-param3="重樱"
+            data-param4="C" data-param5="null" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="长波头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/2/26/3li330fx36d7tkx48edqmtxj2s893l4.jpg/60px-%E9%95%BF%E6%B3%A2%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/2/26/3li330fx36d7tkx48edqmtxj2s893l4.jpg/90px-%E9%95%BF%E6%B3%A2%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/2/26/3li330fx36d7tkx48edqmtxj2s893l4.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E9%95%BF%E6%B3%A2" title="长波"><img
+                            alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E9%95%BF%E6%B3%A2"
+                    title="长波">长波<br>苌</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="前排先锋,驱逐" data-param2="精锐" data-param3="撒丁帝国"
+            data-param4="C" data-param5="null" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="西北风头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/7/71/1y8ptyoc9l61oin1a8jdkrs48g2hnge.jpg/60px-%E8%A5%BF%E5%8C%97%E9%A3%8E%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/7/71/1y8ptyoc9l61oin1a8jdkrs48g2hnge.jpg/90px-%E8%A5%BF%E5%8C%97%E9%A3%8E%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/7/71/1y8ptyoc9l61oin1a8jdkrs48g2hnge.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E8%A5%BF%E5%8C%97%E9%A3%8E"
+                        title="西北风"><img alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E8%A5%BF%E5%8C%97%E9%A3%8E"
+                    title="西北风">西北风</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="前排先锋,驱逐" data-param2="精锐" data-param3="白鹰"
+            data-param4="C" data-param5="null" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="尼古拉斯头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/f/f2/55sg21ofj0gmbr7yqs7abvl17jqd95a.jpg/60px-%E5%B0%BC%E5%8F%A4%E6%8B%89%E6%96%AF%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/f/f2/55sg21ofj0gmbr7yqs7abvl17jqd95a.jpg/90px-%E5%B0%BC%E5%8F%A4%E6%8B%89%E6%96%AF%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/f/f2/55sg21ofj0gmbr7yqs7abvl17jqd95a.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E5%B0%BC%E5%8F%A4%E6%8B%89%E6%96%AF"
+                        title="尼古拉斯"><img alt="舰娘头像外框精锐.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E7%B2%BE%E9%94%90.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a5/5whkzvt200zwhhx0h0iz9qo1kldnidj.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E5%B0%BC%E5%8F%A4%E6%8B%89%E6%96%AF"
+                    title="尼古拉斯">尼古拉斯</a></span>
+        </div>
+        <div class="jntj-1 divsort" data-param0="0" data-param1="前排先锋,驱逐" data-param2="超稀有" data-param3="自由鸢尾"
+        data-param4="C" data-param5="C+" data-param6="" style="display: none">
+            <div class="jntj-2"><img alt="凯旋头像.jpg"
+                    src="https://patchwiki.biligame.com/images/blhx/thumb/d/de/lkkblex2dufyoczqpo2rohy42el3ji9.jpg/60px-%E5%87%AF%E6%97%8B%E5%A4%B4%E5%83%8F.jpg"
+                    decoding="async" width="60" height="60"
+                    srcset="https://patchwiki.biligame.com/images/blhx/thumb/d/de/lkkblex2dufyoczqpo2rohy42el3ji9.jpg/90px-%E5%87%AF%E6%97%8B%E5%A4%B4%E5%83%8F.jpg 1.5x, https://patchwiki.biligame.com/images/blhx/d/de/lkkblex2dufyoczqpo2rohy42el3ji9.jpg 2x"
+                    data-file-width="100" data-file-height="100">
+                <div class="jntj-3"><a href="https://wiki.biligame.com/blhx/%E5%87%AF%E6%97%8B" title="凯旋"><img alt="舰娘头像外框超稀有.png"
+                            src="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/60px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png"
+                            decoding="async" width="60" height="60"
+                            srcset="https://patchwiki.biligame.com/images/blhx/thumb/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png/90px-%E8%88%B0%E5%A8%98%E5%A4%B4%E5%83%8F%E5%A4%96%E6%A1%86%E8%B6%85%E7%A8%80%E6%9C%89.png 1.5x, https://patchwiki.biligame.com/images/blhx/a/a2/ptog1j220x5q02hytpwc8al7f229qk9.png 2x"
+                            data-file-width="95" data-file-height="95"></a></div>
+            </div><span class="jntj-4"><a href="https://wiki.biligame.com/blhx/%E5%87%AF%E6%97%8B" title="凯旋">凯旋</a></span>
+        </div>
+    </div>
+
+    <div data-paramButton=""></div>
+    <script src="scripts/menu.js">
+    </script>
+</body>
+
+
+</html>
