@@ -1,0 +1,118 @@
+.menuHeader{
+    font-size: 20px;
+    color:#4a89e6;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+table.wikitable.FilterTable th {
+    padding: 5px 5px;
+    color: #fff;
+    border: 1px solid #529aef;
+    border-right-color: transparent;
+    background: linear-gradient(45deg, #4a89e6, #529aef, hsl(205, 89%, 65%), #5abef7)
+}
+
+table.wikitable.FilterTable,table.wikitable.CardSelect {
+    border-width: 0.8px !important;
+    background-color: #fff;
+    border: 1px solid #9cb1c9;
+}
+
+li.btn.selected {
+    color: #333!important;
+    background-color: #e6e6e6!important;
+    border-color: #adadad!important;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+
+.bubutable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    color: #333;
+    background-color: #fff;
+    border-color: #757575;
+    border: 1px solid;
+    border-radius: 4px
+}
+
+.jntj-1 {
+    float: left;
+    text-align: center;
+    width: 65px;
+    margin: 0 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    .jntj-1 {
+        margin:0px
+    }
+}
+
+.jntj-1 img {
+    pointer-events: none
+}
+
+.jntj-1 div a {
+    display: inline-block
+}
+
+.jntj-2 {
+    position: relative;
+    display: inline-block;
+    height: 60px
+}
+
+.jntj-2 img {
+    border-radius: 5px
+}
+
+.jntj-3 {
+    position: absolute;
+    width: 60px;
+    top: 0px;
+    left: 0px
+}
+
+.jntj-4 {
+    width: 65px;
+    font-size: 12px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 24px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+ 
+.jntj-1:hover .jntj-4 {background: #fff;}
+.jntj-1:hover .jntj-4 a {overflow: visible;position: relative;width: unset;background: #fff;}
+
+.jntj-4 {height: 24px;display: table-cell;vertical-align: middle;}
+.jntj-4 a {width: 65px;font-size: 12px;display: inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;line-height: 1;vertical-align: middle;}
