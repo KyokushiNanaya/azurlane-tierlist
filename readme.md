@@ -12,3 +12,9 @@ I am a beginner in html, css and js coding, therefore the code might include pos
 
 我是html, css和js的编程萌新，所以此网页的代码将有可能有大量bug以及糟糕的编程习惯。
 请见谅。
+
+這是個人用的碧藍航線強度榜網頁，現只支持中文。
+
+數據皆來源於bilibili的碧藍航線wiki，並且如若wiki網站掛了，此網頁的所有icon皆無法顯示。
+
+我是html, css和js的編程萌新，所以此網頁的代碼將有可能有大量bug以及糟糕的編程習慣。請見諒。
